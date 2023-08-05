@@ -1,0 +1,41 @@
+rm ass1.xsm
+rm ass2.xsm
+rm ass3.xsm
+rm ass4.xsm
+rm create.xsm
+rm delete.xsm
+load --init ../expl/expl_progs/stage26/init.xsm
+load --idle ../expl/expl_progs/stage26/idle.xsm
+load --shell ../expl/expl_progs/stage26/shell.xsm
+load --exec ../expl/expl_progs/stage25/ass1.xsm
+load --exec ../expl/expl_progs/stage25/ass2.xsm
+load --exec ../expl/expl_progs/stage25/ass3.xsm
+load --exec ../expl/expl_progs/stage25/ass4.xsm
+load --exec ../expl/expl_progs/stage26/create.xsm
+load --exec ../expl/expl_progs/stage26/delete.xsm
+load --exhandler ../spl/spl_progs/stage26/exception.xsm
+load --int=console ../spl/spl_progs/stage26/int-console.xsm
+load --int=disk ../spl/spl_progs/stage26/int-disk.xsm
+load --int=timer ../spl/spl_progs/stage26/int-timer.xsm
+load --int=4 ../spl/spl_progs/stage26/int4-file.xsm
+load --int=5 ../spl/spl_progs/stage26/int5-open-close.xsm
+load --int=6 ../spl/spl_progs/stage26/int6-read.xsm
+load --int=7 ../spl/spl_progs/stage26/int7-write.xsm
+load --int=8 ../spl/spl_progs/stage26/int8-fork.xsm
+load --int=9 ../spl/spl_progs/stage26/int9-exec.xsm
+load --int=10 ../spl/spl_progs/stage26/int10-halt.xsm
+load --int=11 ../spl/spl_progs/stage26/int11-wait-signal.xsm
+load --int=12 ../spl/spl_progs/stage26/int12-logout.xsm
+load --int=13 ../spl/spl_progs/stage26/int13-sem-get-rel.xsm
+load --int=14 ../spl/spl_progs/stage26/int14-sem-lock-unlock.xsm
+load --int=15 ../spl/spl_progs/stage26/int15-shutdown.xsm
+load --int=16 ../spl/spl_progs/stage26/int16-uid-pass.xsm
+load --int=17 ../spl/spl_progs/stage26/int17-login.xsm
+load --module 0 ../spl/spl_progs/stage26/mod0-resource.xsm
+load --module 1 ../spl/spl_progs/stage26/mod1-process.xsm
+load --module 2 ../spl/spl_progs/stage26/mod2-memory.xsm
+load --module 3 ../spl/spl_progs/stage26/mod3-file.xsm
+load --module 4 ../spl/spl_progs/stage26/mod4-device.xsm
+load --module 5 ../spl/spl_progs/stage26/mod5-scheduler.xsm
+load --module 7 ../spl/spl_progs/stage26/mod7-boot.xsm
+load --os ../spl/spl_progs/stage26/startup.xsm
